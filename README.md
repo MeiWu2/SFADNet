@@ -14,7 +14,7 @@ Generation (DGG) Module to generate an adaptive dynamic
 graph, serving as the input graph for the Residual Graph
 Convolution (RGC) Module, which operates on multiple
 traffic mode flows decoupled by the output of the Decouple
-Module. The decoupled traffic mode flows are concatenated and fed into the Temporal Sequence (TS) Module for
+Module. The decoupled traffic mode flows are concatenated and fed into the Temporal Sequence (TS) Module for
 extracting temporal information. Convolutional operations,
 activation functions, and linear layers introduce nonlinear
 factors, facilitating the final prediction.
