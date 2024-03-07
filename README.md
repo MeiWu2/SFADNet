@@ -7,3 +7,14 @@ Information Graphs (TG) and Space Information Graphs (SG), and employ residual g
 modules to better capture dynamic spatio-temporal relationships under different fine-grained traffic
 modes. Comprehensive experimental results demonstrate that SFADNet outperforms current state-of-the-art baselines in performance across four large-scale datasets.
 ![model](https://github.com/MeiWu2/SFADNet/assets/101339621/746dad2d-f802-417d-a2fa-b12a9fdd5170)
+The input traffic signal $\mathcal{X}_{t-T_h:t}$
+undergo temporal embedding. The cyclic temporal features
+generated at time step 𝑡 are processed by the Dynamic Graph
+Generation (DGG) Module to generate an adaptive dynamic
+graph, serving as the input graph for the Residual Graph
+Convolution (RGC) Module, which operates on multiple
+traffic mode flows decoupled by the output of the Decouple
+Module. The decoupled traffic mode flows are concatenated and fed into the Temporal Sequence (TS) Module for
+extracting temporal information. Convolutional operations,
+activation functions, and linear layers introduce nonlinear
+factors, facilitating the final prediction.
